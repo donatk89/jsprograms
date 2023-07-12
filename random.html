@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	function getRandomInt(max){
+		return Math.floor(Math.random()* Math.floor(max))
+	}
+	console.log(getRandomInt(5))
+
+	console.log(getRandomInt(1))
+
+	console.log(Math.random())
+	</script>
+</body>
+</html> -->
+
+
+<!--javascript random integers-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>javascript Math</h2>
+	<p>Math.floor(Math.random()*100) returns a random integer between 0 and 99(both included):</p>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML= Math.floor(Math.random()*100)+1;
+	</script>
+</body>
+</html> -->
+
+
+
+<!--proper random function-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>Javascript Math.random()</h2>
+	<p>every time you click the button,getRndIntteger(min,max) returns a random number between 0 and 9(both included):</p>
+
+	<button onclick="document.getElementById('demo').innerHTML=getRndInteger(0,10)">click me</button>
+
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		function getRndInteger(min,max){
+			return Math.floor(Math.random()*(max-min))+min;
+		}
+	</script>
+</body>
+</html>

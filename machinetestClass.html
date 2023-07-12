@@ -1,0 +1,206 @@
+
+<!--class with property-->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	class car{
+		model=2020;
+	}
+	maruthi=new car();
+	console.log(maruthi.model)
+</script>
+</body>
+</html> -->
+
+
+<!--class with method-->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	class Car{
+		soundhorn(){
+			console.log("beep beep")
+		}
+	}
+	maruthi = new Car();
+	console.log(maruthi.soundhorn());
+</script>
+</body>
+</html> -->
+
+
+
+<!--class with propery and method-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	class Car{
+		model=2020;
+		soundHorn(){
+			console.log("beep");
+		}
+	}
+
+	maruthi=new Car();
+	console.log(maruthi.model);
+	console.log(maruthi.soundHorn());
+</script>
+</body>
+</html> -->
+
+
+
+<!--class with constructor-->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		class car{
+			constructor(color){
+				this.color=color
+			}
+		}
+	</script>
+</body>
+</html> -->
+
+
+
+<!--passing parameters to a class cia constructor-->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	class car{
+		constructor(color){
+			this.color=color;
+		}
+	}
+	maruthi= new car("red");
+	console.log(maruthi.color);
+	maruthi1= new car("white");
+	console.log(maruthi1.color);
+</script>
+</body>
+</html> -->
+
+
+
+<!--class with getter-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	class car{
+		constructor(color){
+			this.color=color;
+		}
+
+		get carColor(){
+			return this.color;
+		}
+	}
+
+	maruthi=new car("red");
+	console.log(maruthi.carColor)
+</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	class car{
+		constructor(color){
+			this.color=color;
+		}
+
+		set carColor(newColor){
+			this.color=newColor;
+		}
+	}
+
+	maruthi=new car("red");
+	console.log(maruthi.color)
+</script>
+</body>
+</html> -->
+
+
+<!--getter and setter-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	class car{
+		constructor(color){
+			this.color=color;
+		}
+
+		get carColor(){
+			return this.color;
+		}
+
+		set carColor(newColor){
+			this.color=newColor
+		}
+	}
+maruthi=new car("red");
+console.log(maruthi.carColor);
+maruthi.carColor="white";
+console.log(maruthi.carColor)
+</script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>my first page</h2>
+
+	<p id="demo"></p>
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML="hello world"
+	</script>
+</body>
+</html> -->
+
+
+<!--finding html element by id-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>finding html element by id</h2>
+
+	<p id="example">hello world</p>
+	<p>This example demonstrate the <b>getElementById</b> method</p>
+
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		var myElement=document.getElementById("example");
+		document.getElementById("demo").innerHTML="The text from the example paragraph is " + myElement.innerHTML
+	</script>
+</body>
+</html> -->
+
+<!--finding html element by tag name-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>finding html element by tagname</h2>
+
+	<p>hello world</p>
+
+<p>This is example demonstrate the <b>getElementsByTagName </b>method</p>
+<p id="demo"></p>
+
+<script type="text/javascript">
+	var x=document.getElementsByTagName("p");
+	document.getElementById("demo").innerHTML="The text in first paragraph is " + x[0].innerHTML;
+</script>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>finding html element by tag name</h2>
+
+	<div id="main">
+		<p>The dom is very useful</p>
+		<p>This example demonstrate the getElementByTagname method</p>
+	</div>
+
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		var x=document.getElementById("main");
+		var y=x.getElementsByTagName("p");
+		document.getElementById("demo").innerHTML="The first paragraph inside main is: " + y[0].innerHTML;
+	</script>
+</body>
+</html> -->
+
+
+<!--finding html element by class name-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>finding html element by class name</h2>
+
+	<p>hello world</p>
+
+	<p class="example">the dom is very useful</p>
+	<p class="example">this example demonstrate the getzelementByClassName method</p>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		var x=document.getElementsByClassName("example");
+		document.getElementById("demo").innerHTML="the first paragraph with class example " + x[0].innerHTML
+	</script>
+</body>
+</html>
+ -->
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<style>
+#container {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#animate {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+</style>
+<body>
+
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+<script>
+function myMove() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var id = setInterval(frame, 5);
+  function frame() {
+    if (pos == 350) {
+      clearInterval(id);
+    } else {
+      pos++; 
+      elem.style.top = pos + "px"; 
+      elem.style.left = pos + "px"; 
+    }
+  }
+}
+</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 onclick="this.innerHTML='Welcome to MashupStack!'">Click Here To See Magic!</h1>
+
+</body>
+</html>
+ -->
+
+
+
+
+
+
+
+
+<!-- <html>
+<head>   
+<script type = "text/javascript">
+         
+            function trigResp() {
+               alert("Welcome to MashupStack")
+            }
+         
+      </script>      
+   </head>
+   
+   <body>
+      <p>Click the following button and see result</p>      
+      <form>
+         <input type = "button" onclick = "trigResp()" value = "Click Me !" />
+      </form>      
+   </body>
+</html>
+ -->
+
+
+
+
+
+
+<!-- <html>
+   <head>   
+      <script type = "text/javascript">
+        
+            function validation() {
+               all validation goes here
+               .........
+               return either true or false
+            }
+         
+      </script>      
+   </head>
+   
+   <body>   
+      <form method = "POST" action = "t.cgi" onsubmit = "return validate()">
+         .......
+         <input type = "submit" value = "Submit" />
+      </form>      
+   </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:#D94A38;width:120px;height:20px;padding:40px;">
+Mouse Over Me</div>
+
+<script>
+function mOver(obj) {
+  obj.innerHTML = "Thank You"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Mouse Over Me"
+}
+</script>
+
+</body>
+</html> 
+
+
+
+
+

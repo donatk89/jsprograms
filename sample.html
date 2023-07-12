@@ -1,0 +1,237 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	let a=3;
+	let b=5;
+	let sum=a+b;
+	console.log(sum);
+</script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function add(){
+			let a=parseInt(prompt("enter no"));
+			let b=parseInt(prompt("enter no"))
+			let result=a+b;
+
+			console.log(result);
+		}
+		add();
+	</script>
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!--  
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+
+
+<body>
+	<button onclick="arraysort()">try</button>
+	<p id="demo"></p>
+<script type="text/javascript">
+	var arr=["apple","orange","mango"];
+
+	document.getElementById("demo").innerHTML=arr;
+	function arraysort(){
+		arr.sort();
+		document.getElementById("demo").innerHTML=arr;
+	}
+</script>
+</body>
+</html> -->
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+	let pattern= "";
+	for (let i = 1; i <= 10; i++){
+		for (let j=0;j<i;j++){
+			pattern += "*";
+		}
+			pattern+="<br>";
+		}
+document.getElementById("demo").innerHTML=pattern;
+	
+
+</script>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		var arr=["orange","grape","mango","apple","blueberry"];
+		
+		arr.sort();
+		document.getElementById("demo").innerHTML=arr;
+	</script>
+
+</body>
+</html> -->
+
+
+
+<!--down star-->
+<!-- 
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+<script type="text/javascript">
+	let n=5;
+	var pattern="";
+	for(let i=1;i<=n;i++){
+		for(let j=0;j<n-i;j++){
+
+				pattern+="*";
+			
+		}
+		pattern+="<br>";
+	}
+	document.getElementById("demo").innerHTML=pattern;
+</script>
+</body>
+</html> -->
+
+
+
+
+
+<!--pyramid trangle-->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+<script type="text/javascript">
+	let n=5;
+	let pattern="";
+	for(let i=1;i<=n;i++){
+		for(let j=1;j<=n-i;j++){
+			pattern+=" ";
+		}
+		for(let k=0;k<2*i-1;k++){
+			pattern+="*"
+		}
+		pattern+="<br>";
+
+	}
+	document.getElementById("demo").innerHTML=pattern;
+</script>
+</body>
+</html> -->
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	
+
+let n = 5;
+let string = "";
+for (let i = 1; i <= n; i++) {
+ 
+  for (let j = 1; j <= n - i; j++) {
+    string += " ";
+  }
+ 
+  for (let k = 0; k < 2 * i - 1; k++) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
+</script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+<script type="text/javascript">
+	var arr=["mango","orange","apple","grape"];
+	document.getElementById("demo").innerHTML=arr;
+	arr.sort();
+	document.getElementById("demo1").innerHTML=arr;
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+
+
+
+<!-- HTML code -->
+<button onclick="selectWinner()">Select Winner</button>
+<p id="winner"></p>
+
+<!-- Bootstrap modal popup box -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Winner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="winnerModal"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Create an array of lottery ticket numbers
+  var lotteryNumbers = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+  function selectWinner() {
+    // Select a random winner from the array
+    var winnerIndex = Math.floor(Math.random() * lotteryNumbers.length);
+    var winner = lotteryNumbers[winnerIndex];
+
+    // Display the winner in the console
+    console.log("Winner: " + winner);
+
+    // Display the winner in red color on the HTML page
+    document.getElementById("winner").innerHTML = "Winner: <span style='color:red'>" + winner + "</span>";
+
+    // Display the winner in a Bootstrap modal popup box
+    document.getElementById("winnerModal").innerHTML = "The winner is: " + winner;
+    $('#myModal').modal('show');
+  }
+</script>
+</body>
+</html>

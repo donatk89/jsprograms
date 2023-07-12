@@ -1,0 +1,182 @@
+ <!--using string search with a string-->
+<!--<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Search a string for "Mashupstack", and display the position of the match:</p>
+
+<p id="demo"></p>
+
+<script>
+var str = "Visit Mashupstack!"; 
+var n = str.search("Mashupstack");
+document.getElementById("demo").innerHTML = n;
+</script>
+
+</body>
+</html> -->
+
+
+<!--using string search with  aregular expressionss-->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Regular Expressions</h2>
+
+<p>Search a string for "Mashupstack", and display the position of the match:</p>
+
+<p id="demo"></p>
+
+<script>
+var str = "Visit Mashupstack/!"; 
+var nam = str.search(/MASHUPSTACK/i);
+document.getElementById("demo").innerHTML = nam;
+</script>
+
+</body>
+</html> -->
+
+<!--using string replace with astring-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>javascript regular expressions</h2>
+
+	<p>replace google with mashupstack in the sentence below</p>
+
+	<button onclick="myFunction()">try it</button>
+
+	<p id="demo">hello google</p>
+
+	<script type="text/javascript">
+		function myFunction(){
+			var str=document.getElementById("demo").innerHTML;
+			var txt=str.replace("google","mashupstack");
+			document.getElementById("demo").innerHTML=txt;
+		}
+	</script>
+</body>
+</html> -->
+
+
+
+<!--using string replace with regular expressions-->
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>javascript regular expressions</h2>
+
+	<p>replace google with mashupstack in the sentence below</p>
+
+	<button onclick="myFunction()">try it</button>
+
+	<p id="demo">hello google and google</p>
+
+	<script type="text/javascript">
+		function myFunction(){
+			var str=document.getElementById("demo").innerHTML;
+			var txt=str.replace(/google/i,"mashupstack");
+			document.getElementById("demo").innerHTML=txt;
+		}
+	</script>
+</body>
+</html>
+ -->
+
+
+
+<!--i modifier-->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a case-insensitive search for "Mashupstack" in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "Visit Mashupstack";
+  var patt1 = /Mashupstack/i;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html> -->
+
+
+<!--g modifier-->
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a global search for "easy" in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "Javascript is easy. A walk in the park easy!";
+  var pattern = /easy/g;
+  var result = str.match(pattern);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+ -->
+
+<!--m modifier-->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a multiline search for "is" at the beginning of each line in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo_1"></p>
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "\nJavascript is easy\neasy as it gets.";
+  var patt1 = /^easy/m;
+  var result = str.match(patt1);
+  document.getElementById("demo_1").innerHTML = str;
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>

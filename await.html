@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	const myFirstPromise = new Promise((resolve, reject) => { 
+	    const condition = true;   
+	    if(condition) {
+	         setTimeout(function(){
+	             resolve("Promise is resolved!"); 
+	        }, 3000);
+	    } else {    
+	        reject('Promise is rejected!');  
+	    }
+	});
+
+	const helloPromise  = function() {
+	  return new Promise(function(resolve, reject) {
+	    const message = `Hi, How are you!`;
+
+	    resolve(message)
+	  });
+	}
+	
+	async function demoPromise() {
+	  let message = await myFirstPromise;
+          let message1  = await helloPromise();
+          console.log(message);
+          console.log("asynchronous")
+          console.log(message1)
+          console.log("async function end")
+	}
+
+	demoPromise();
+
+</script>
+</body>
+</html>

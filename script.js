@@ -1,0 +1,1 @@
+alert("hello, i am a script from external file")

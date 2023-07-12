@@ -1,0 +1,182 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>javascript arrays</h1>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		var fruits=["apple","orange","grape"];
+		document.getElementById("demo").innerHTML=fruits;
+	</script>
+</body>
+</html> -->
+
+
+<!-- using new keyword-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>javascript array new keyword</h2>
+
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		var fruit=new Array("apple","grape","orange");
+		document.getElementById("demo").innerHTML=fruit;
+	</script>
+</body>
+</html> -->
+
+
+<!--using index number-->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h1>javascript array</h1>
+
+	<p>javascript array elements are accessed using numeric indexs</p>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		
+		var fruits=["apple","orange","grape"];
+		document.getElementById('demo').innerHTML=fruits[2];
+	</script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<h2>javascript array</h2>
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		var vegitable=["carrot","cabbage","beetroot"];
+		vegitable[5]="tomato";
+		document.getElementById("demo").innerHTML=vegitable;
+	</script>
+</body>
+</html>
+ -->
+
+
+<!--looping array-->
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<h1>looping array</h1>
+
+<p id="demo"></p>
+
+<script type="text/javascript">
+	
+	var fruits,fleng,i,text;
+	fruits=["apple","orange","pinapple","grape"];
+	fleng=fruits.length;
+
+
+	text="<ul>";
+	for(i=0;i<fleng;i++){
+		text+="<li>"+fruits[i]+"</li>";
+
+	}
+	text+="</ul>";
+	document.getElementById("demo").innerHTML=text;
+</script>
+</body>
+</html> -->
+
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Adding elements with high indexes can create undefined "holes" in an array.</p>
+
+<p id="demo"></p>
+
+<script>
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[6] = "Lemon";
+
+fLen = fruits.length;
+text = "";
+for (i = 0; i < fLen; i++) {
+  text += fruits[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
+ -->
+
+
+<!--convert string-->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array Methods</h2> 
+
+<h2>toString()</h2>
+
+<p>The toString() method returns an array as a comma separated string:</p>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = "The type of fruits array is " + 
+typeof(fruits) 
+document.getElementById("demo1").innerHTML = "After using the toString () method type becomes " + 
+typeof(fruits.toString());
+
+document.getElementById("demo2").innerHTML=fruits.toString();
+
+</script>
+
+</body>
+</html>
+ -->
+
+
